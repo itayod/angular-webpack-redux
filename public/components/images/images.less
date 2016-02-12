@@ -1,0 +1,41 @@
+div#images {
+  border: solid;
+  width: 500px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10vh;
+
+  #images-container *{
+
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+  }
+
+  #images-container{
+    .images-arrow {
+      position: absolute;
+      top: 50%;
+      cursor: pointer;
+    }
+    .images-left-arrow {
+      transform: translate(0,-50%);
+      left: 0;
+    }
+    .images-right-arrow {
+      transform: translate(-100%,-50%);
+      left: 100%
+    }
+    img{
+      width: 200px;
+      height: 280px;
+    }
+    #images-title {
+      text-align: center;
+    }
+
+  }
+
+
+}
